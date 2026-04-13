@@ -1,0 +1,24 @@
+#include <stdio.h>
+struct Date
+{
+  	int day, month, year;
+};
+struct Employee
+{
+  	char name[50];
+  	int id;
+  	struct Date dob;
+};
+int main()
+{
+  	printf("25331A05H2");
+  	struct Employee e;
+  	printf("Enter name and ID: ");
+  	scanf("%s %d", e.name, &e.id);
+  	printf("Enter DOB (dd mm yyyy): ");
+  	scanf("%d %d %d", &e.dob.day, &e.dob.month, &e.dob.year);
+  	printf("Name: %s\n", e.name);
+  	printf("ID: %d\n", e.id);
+  	printf("DOB: %d/%d/%d\n", e.dob.day, e.dob.month, e.dob.year);
+  	return 0;
+}
